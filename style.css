@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #0a0015, #000) !important;
+  color: white;
+}
+
+section {
+  background: transparent !important;
+}
+
+.shop {
+  background: transparent !important;
+}
+
+.products {
+  background: transparent !important;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: red;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+/* CARD POSITION FIX */
+.card {
+  position: relative;
+}
+
+/* PAYPAL DISABLED */
+.paypal {
+  background: #555;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* OVERLAY */
+.paypal-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* CASHAPP BUTTON */
+.cashapp {
+  background: #00d632;
+  color: black;
+}
