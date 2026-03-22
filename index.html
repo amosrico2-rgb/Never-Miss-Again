@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Never Miss Again</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Never Miss Again</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Products</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="logo.png" class="logo">
+  <h2>Never Miss Again</h2>
+  <p>Elite scripts & configs for competitive players</p>
+  <button onclick="scrollToShop()">Shop Now</button>
+</section>
+
+<section id="shop" class="shop">
+
+  <h2>🔥 Featured Products</h2>
+
+  <!-- 🔥 YOUR PRODUCTS -->
+  <div class="products">
+
+    <div class="card">
+      <div class="badge">LIMITED</div>
+      <img src="logo.png">
+      <h3>YOGA V2</h3>
+      <p>Automatically greens every shot in NBA 2K26 with perfect timing.</p>
+
+      <div class="paypal-wrapper">
+        <button class="paypal disabled">PayPal</button>
+        <div class="overlay">Coming Soon</div>
+      </div>
+
+      <button onclick="payCashApp('YOGA V2')" class="cashapp">CashApp</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">LIMITED</div>
+      <img src="logo.png">
+      <h3>HOOPS</h3>
+      <p>Auto-green system that guarantees consistent perfect releases in 2K26.</p>
+
+      <div class="paypal-wrapper">
+        <button class="paypal disabled">PayPal</button>
+        <div class="overlay">Coming Soon</div>
+      </div>
+
+      <button onclick="payCashApp('HOOPS')" class="cashapp">CashApp</button>
+    </div>
+
+    <div class="card">
+      <div class="badge">LIMITED</div>
+      <img src="logo.png">
+      <h3>GREENZ 1.0</h3>
+      <p>Advanced auto-green technology for flawless shots every time in 2K26.</p>
+
+      <div class="paypal-wrapper">
+        <button class="paypal disabled">PayPal</button>
+        <div class="overlay">Coming Soon</div>
+      </div>
+
+      <button onclick="payCashApp('GREENZ 1.0')" class="cashapp">CashApp</button>
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 Never Miss Again</p>
+</footer>
+
+<script>
+function scrollToShop() {
+  document.getElementById("shop").scrollIntoView({ behavior: "smooth" });
+}
+
+function payCashApp(product) {
+  window.open("https://cash.app/$RicoAmos10", "_blank");
+  alert("Send payment with note: " + product);
+}
+</script>
+
+</body>
+</html>
